@@ -1,11 +1,7 @@
-import React from 'react';
+// import React from 'react';
 
 const MyJsHeader = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+    return null
 };
 
 export default MyJsHeader;

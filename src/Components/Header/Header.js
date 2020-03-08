@@ -4,6 +4,8 @@ import logo from '../Images/logo192.png'
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import './Header.css'
 
+import { add, log } from '../Utils.js';
+
 import Home from '../../Pages/Home';
 import About from '../../Pages/About';
 import Contacts from '../../Pages/Contacts';
@@ -11,15 +13,18 @@ import Blog from '../../Pages/Blog';
 
 class Header extends Component {
     render() {
+        // console.log(add(2, 3));
+        console.log(add(2, 3));
+        log('test')
         return (
-            <>
-                <div class="hero-anime">
+            <div>
+                <div className="hero-anime">
 
-                    <div class="navigation-wrap bg-light start-header start-style">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <nav class="navbar navbar-expand-md navbar-light">
+                    <div className="navigation-wrap bg-light start-header start-style">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-12">
+                                    <nav className="navbar navbar-expand-md navbar-light">
 
                                         <Navbar.Brand href={'/'}>
                                             <img
@@ -31,26 +36,26 @@ class Header extends Component {
                                             /> React site
                                         </Navbar.Brand>
 
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        <button className="navbar-toggler" type="button" data-toggle="collapse"
                                                 data-target="#navbarSupportedContent"
                                                 aria-controls="navbarSupportedContent" aria-expanded="false"
                                                 aria-label="Toggle navigation">
-                                            <span class="navbar-toggler-icon"></span>
+                                            <span className="navbar-toggler-icon"></span>
                                         </button>
 
-                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                            <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                                    <a class="nav-link" href={'/'}>Portfolio</a>
+                                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul className="navbar-nav ml-auto py-4 py-md-0">
+                                                <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                    <a className="nav-link" href={'/'}>Portfolio</a>
                                                 </li>
-                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                                    <a class="nav-link" href={'/about'}>Agency</a>
+                                                <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                    <a className="nav-link" href={'/about'}>Agency</a>
                                                 </li>
-                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                                    <a class="nav-link" href={'/contacts'}>Journal</a>
+                                                <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                    <a className="nav-link" href={'/contacts'}>Journal</a>
                                                 </li>
-                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                                    <a class="nav-link" href={'/blog'}>Contact</a>
+                                                <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                    <a className="nav-link" href={'/blog'}>Contact</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -60,22 +65,22 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-                    {/*<div class="section full-height">*/}
-                    {/*    <div class="absolute-center">*/}
-                    {/*        <div class="section">*/}
-                    {/*            <div class="container">*/}
-                    {/*                <div class="row">*/}
-                    {/*                    <div class="col-12">*/}
+                    {/*<div className="section full-height">*/}
+                    {/*    <div className="absolute-center">*/}
+                    {/*        <div className="section">*/}
+                    {/*            <div className="container">*/}
+                    {/*                <div className="row">*/}
+                    {/*                    <div className="col-12">*/}
 
                     {/*                        <p>scroll for nav animation</p>*/}
                     {/*                    </div>*/}
                     {/*                </div>*/}
                     {/*            </div>*/}
                     {/*        </div>*/}
-                    {/*        <div class="section mt-5">*/}
-                    {/*            <div class="container">*/}
-                    {/*                <div class="row">*/}
-                    {/*                    <div class="col-12">*/}
+                    {/*        <div className="section mt-5">*/}
+                    {/*            <div className="container">*/}
+                    {/*                <div className="row">*/}
+                    {/*                    <div className="col-12">*/}
                     {/*                        <div id="switch">*/}
                     {/*                            <div id="circle"></div>*/}
                     {/*                        </div>*/}
@@ -85,9 +90,9 @@ class Header extends Component {
                     {/*        </div>*/}
                     {/*    </div>*/}
                     {/*</div>*/}
-                    {/*<div class="my-5 py-5">*/}
+                    {/*<div className="my-5 py-5">*/}
                     {/*</div>*/}
-                    {/*<a href="https://themeforest.net/user/ig_design/portfolio" class="link-to-portfolio"*/}
+                    {/*<a href="https://themeforest.net/user/ig_design/portfolio" className="link-to-portfolio"*/}
                     {/*   target='_blank'></a>*/}
                 </div>
                 <Router>
@@ -98,7 +103,7 @@ class Header extends Component {
                         <Route exact path={'/blog'} component={Blog}/>
                     </Switch>
                 </Router>
-            </>
+            </div>
         );
     }
 }
