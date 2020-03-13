@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
 import $ from 'jquery';
+import bgImg from './Images/bg-01.jpg'
+import './Css/Contacts.css'
+import './Css/Util.css'
+import './Css/icon-font.min.css'
+import '../../Animation.css'
 
 
 class Contacts extends Component {
@@ -20,7 +25,6 @@ class Contacts extends Component {
                         check = false;
                     }
                 }
-
                 return check;
             });
 
@@ -60,7 +64,7 @@ class Contacts extends Component {
             <>
                 <div className='container-contact100'>
                     <div className="wrap-contact100">
-                        <form className="contact100-form validate-form">
+                        <form className="contact100-form validate-form animated bounceInRight">
 				<span className="contact100-form-title">
 					Send Us A Message
 				</span>
@@ -101,13 +105,13 @@ class Contacts extends Component {
                             </div>
 
                             <div className="container-contact100-form-btn">
-                                <button className="contact100-form-btn">
+                                <button className="cta">
                                     Send Message
                                 </button>
                             </div>
                         </form>
 
-                        <div className="contact100-more flex-col-c-m">
+                        <div className="contact100-more flex-col-c-m animated bounceInLeft" style={{backgroundImage: "url(" + bgImg + ")"}}>
                             <div className="flex-w size1 p-b-47">
                                 <div className="txt1 p-r-25">
                                     <span className="lnr lnr-map-marker"></span>

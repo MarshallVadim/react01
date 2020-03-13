@@ -16,27 +16,27 @@ class Footer extends Component {
                                 CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
                         </div>
 
-                        <div className="col-xs-6 col-md-3">
-                            <h6>Categories</h6>
-                            <ul className="footer-links">
-                                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-                            </ul>
-                        </div>
+                        {/*<div className="col-xs-6 col-md-3">*/}
+                        {/*    <h6>Categories</h6>*/}
+                        {/*    <ul className="footer-links">*/}
+                        {/*        <li><a href="http://scanfcode.com/category/c-language/">C</a></li>*/}
+                        {/*        <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>*/}
+                        {/*        <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>*/}
+                        {/*        <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>*/}
+                        {/*        <li><a href="http://scanfcode.com/category/android/">Android</a></li>*/}
+                        {/*        <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>*/}
+                        {/*    </ul>*/}
+                        {/*</div>*/}
 
-                        <div className="col-xs-6 col-md-3">
-                            <h6>Quick Links</h6>
-                            <ul className="footer-links">
-                                <li><a href = {'/'}> Home </a></li>
-                                <li><a href = {'/about'}>About Us</a></li>
-                                <li><a href = {'/contacts'}> Contacts </a></li>
-                                <li><a href = {'/blog'}> Blog </a></li>
-                            </ul>
-                        </div>
+                        {/*<div className="col-xs-6 col-md-3">*/}
+                        {/*    <h6>Quick Links</h6>*/}
+                        {/*    <ul className="footer-links">*/}
+                        {/*        <li><a href={'/'}> Home </a></li>*/}
+                        {/*        <li><a href={'/about'}>About Us</a></li>*/}
+                        {/*        <li><a href={'/contacts'}> Contacts </a></li>*/}
+                        {/*        <li><a href={'/blog'}> Blog </a></li>*/}
+                        {/*    </ul>*/}
+                        {/*</div>*/}
                     </div>
                     <hr/>
                 </div>

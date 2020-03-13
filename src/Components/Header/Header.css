@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+/* #Primary
+================================================== */
+
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #212112;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 7%;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: all 200ms linear;
+    /*margin-top: 8vh;*/
+}
+
+::selection {
+    color: aliceblue;
+    background-color: #85c8de;
+}
+
+::-moz-selection {
+    color: aliceblue;
+    background-color: #85c8de;
+}
+
+/* #Navigation
+================================================== */
+.logo-text-header {
+    color: aliceblue;
+}
+
+.logo-text-header:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.start-header {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 10px 0;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.start-header.scroll-on {
+    box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    padding: 5px 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.start-header.scroll-on .navbar-brand img {
+    height: 28px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 52px;
+    width: auto;
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar-toggler {
+    float: right;
+    border: none;
+    padding-right: 0;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-light-header .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 1px solid aliceblue;
+    transition: all 300ms linear;
+}
+
+.navbar-light-header .navbar-toggler-icon:after,
+.navbar-light-header .navbar-toggler-icon:before {
+    width: 24px;
+    position: absolute;
+    height: 1px;
+    background-color: aliceblue;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+}
+
+.navbar-light-header .navbar-toggler-icon:after {
+    top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+
+.link-header {
+    color: #212121 !important;
+    font-weight: 500;
+    transition: all 200ms linear;
+    position: relative;
+    padding: 5px 0 !important;
+    display: inline-block;
+}
+
+.nav-item-header:hover .link-header {
+    color: #85c8de !important;
+}
+
+.nav-item-header.active .link-header {
+    color: #777 !important;
+}
+
+.nav-item-header:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: #85c8de;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.nav-item-header:hover:after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.nav-item-header.active:hover:after {
+    opacity: 0;
+}
+
+.nav-item-header {
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    transition: all 200ms linear;
+}
+
+/* #Primary style
+================================================== */
+
+.bg-light-header {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    transition: all 200ms linear;
+}
+
+
+.nav-item-header.show {
+    opacity: 1;
+    visibility: visible;
+    max-height: 999px;
+    transform: translate3d(0, 0px, 0);
+}
+
+
+/* #Media
+================================================== */
+
+@media (max-width: 767px) {
+    /*body {*/
+    /*    margin-top: 10vh;*/
+    /*}*/
+
+    .nav-item-header:after {
+        display: none;
+    }
+
+    .nav-item-header::before {
+        position: absolute;
+        display: block;
+        top: 15px;
+        left: 0;
+        width: 11px;
+        content: "";
+        border: none;
+        background-color: #8167a9;;
+        vertical-align: 0;
+    }
+
+}
+
